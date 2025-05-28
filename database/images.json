@@ -1,0 +1,42 @@
+[
+  {
+    "imageName": "dog",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_Retriever_Dukedestiny01_drvd.jpg"
+  },
+  {
+    "imageName": "cat",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Orange_tabby_cat_sitting_on_fallen_leaves-Hisashi-01A.jpg/800px-Orange_tabby_cat_sitting_on_fallen_leaves-Hisashi-01A.jpg"
+  },
+  {
+    "imageName": "hamster",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/European_hamster_%28Cricetus_cricetus%29_Meidling.jpg/1920px-European_hamster_%28Cricetus_cricetus%29_Meidling.jpg"
+  },
+  {
+    "imageName": "lion",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Lion_%28Panthera_leo%29_male_6y.jpg/800px-Lion_%28Panthera_leo%29_male_6y.jpg"
+  },
+  {
+    "imageName": "elephant",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/African_Bush_Elephant.jpg/800px-African_Bush_Elephant.jpg"
+  },
+  {
+    "imageName": "giraffe",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Giraffe_standing.jpg/800px-Giraffe_standing.jpg"
+  },
+  {
+    "imageName": "panda",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/1920px-Grosser_Panda.JPG"
+  },
+  {
+    "imageName": "shark",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/56/White_shark.jpg"
+  },
+  {
+    "imageName": "owl",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Bubo_bubo_sibiricus_-_01.JPG/800px-Bubo_bubo_sibiricus_-_01.JPG"
+  },
+  {
+    "imageName": "cobra",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/Indiancobra.jpg"
+  }
+]

@@ -5,7 +5,7 @@ import fibonacciService from './apis/fibonacciService.js'
 import multiplyMatricesService from './apis/multiplyMatricesService.js'
 const router = express.Router()
 router.post('/user', userService)
-router.get('/image', imageService)
+router.post('/image', imageService)
 router.get('/fibonacci', fibonacciService)
 router.get('/matrix', multiplyMatricesService)
 
