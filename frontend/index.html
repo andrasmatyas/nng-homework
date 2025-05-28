@@ -10,12 +10,12 @@
   <body class="light-theme">
     <div class="api-selector-container">
       <label for="apis">Select an API:</label>
-      <select name="'apis">
-        <option value="User">User</option>
-        <option value="Image">Image</option>
+      <select name="'apis" id="api-selector">
+        <option value="user">User</option>
+        <option value="image">Image</option>
         <optgroup label="Math">
-          <option value="Fibonacci">Fibonacci</option>
-          <option value="MatrixMultiplier">MatrixMultiplier</option>
+          <option value="fibonacci">Fibonacci</option>
+          <option value="matrix">Matrix Multiplier</option>
         </optgroup>
       </select>
     </div>
@@ -25,10 +25,10 @@
     <div class="button-container">
       <button id="toggle-align-button">Toggle Align</button>
     </div>
-    <div class="json-input-container">
-      <label for="json-input">JSON Input:</label>
-      <textarea name="json-input" id="json-input"></textarea>
-    </div>
+    <form id="input-form">
+      <label for="userId">User ID:</label>
+      <input type="text" name="userId" id="userId" />
+    </form>
     <div class="button-container"><button>Run</button></div>
     <pre></pre>
   </body>
