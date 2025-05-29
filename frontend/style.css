@@ -80,11 +80,8 @@ textarea:focus {
 }
 .error {
   background-color: var(--danger-color);
+  padding: 0.5rem;
 }
-pre {
-  position: relative;
-}
-/* HTML: <div class="loader"></div> */
 .loader {
   --d: 22px;
   width: 4px;
