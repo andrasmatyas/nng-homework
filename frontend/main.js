@@ -58,6 +58,10 @@ function generateForm() {
   })
 }
 async function apiCall() {
+  const loader = document.createElement('div')
+  loader.setAttribute('class', 'loader')
+  preData.replaceChildren(loader)
+  preData.removeAttribute('class')
   let body = {}
   formFields[apiSelected].forEach((obj) => {
     const input = document.querySelector(`#${obj.key}`)
@@ -70,8 +74,14 @@ async function apiCall() {
   })
   if (result.status === 200) {
     const data = await result.json()
-    preData.replaceChildren(JSON.stringify(data, null, 2))
+    if (data.error) {
+      preData.setAttribute('class', 'error')
+      preData.replaceChildren(data.error)
+    } else {
+      preData.replaceChildren(JSON.stringify(data, null, 2))
+    }
   } else {
+    preData.setAttribute('class', 'error')
     preData.replaceChildren(`${result.status} ${result.statusText}`)
   }
 }

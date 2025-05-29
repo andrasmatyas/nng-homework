@@ -7,5 +7,6 @@ function fibonacciService(req, res) {
   }
   let fibResult = fibonacci.getFibonacci(req.body.fibNumber)
   res.json({ fibResult: fibResult })
+  log(`${req.body.fibNumber}th Fibonacci number calculated: ${fibResult}`)
 }
 export default fibonacciService

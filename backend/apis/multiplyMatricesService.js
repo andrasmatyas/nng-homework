@@ -42,6 +42,7 @@ function multiplyMatricesService(req, res) {
     column2
   )
   res.json(resultMatrix)
+  log('The matrix multiplication has been successfull!')
 }
 
 function isJsonString(str) {
@@ -53,6 +54,11 @@ function isJsonString(str) {
   return true
 }
 function isValidMatix(matrix) {
+  try {
+    matrix[0][0]
+  } catch (e) {
+    return false
+  }
   if (matrix[0][0] === undefined) return false
   let isEqualLength = true
   const rowLength = matrix[0].length
