@@ -7,6 +7,6 @@ const router = express.Router()
 router.post('/user', userService)
 router.post('/image', imageService)
 router.post('/fibonacci', fibonacciService)
-router.get('/matrix', multiplyMatricesService)
+router.post('/matrix', multiplyMatricesService)
 
 export default router

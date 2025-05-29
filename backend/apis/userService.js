@@ -1,7 +1,7 @@
 import log from '../logger.js'
 import { readFile } from 'node:fs'
 
-async function userService(req, res) {
+function userService(req, res) {
   if (!req.body.userId) {
     res.sendStatus(400)
     return log(`Bad request: ${JSON.stringify(req.body)}`, './errors.txt')

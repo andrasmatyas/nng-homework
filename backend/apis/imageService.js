@@ -1,7 +1,7 @@
 import log from '../logger.js'
 import { readFile } from 'node:fs'
 
-async function imageService(req, res) {
+function imageService(req, res) {
   if (!req.body.imageName) {
     res.sendStatus(400)
     return log(`Bad request: ${JSON.stringify(req.body)}`, './errors.txt')
