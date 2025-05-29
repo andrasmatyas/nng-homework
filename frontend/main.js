@@ -61,7 +61,7 @@ async function apiCall() {
   let body = {}
   formFields[apiSelected].forEach((obj) => {
     const input = document.querySelector(`#${obj.key}`)
-    body[obj.key] = input.value
+    body[obj.key] = obj?.type === 'number' ? parseInt(input.value) : input.value
   })
   const result = await fetch(`/api/${apiSelected}`, {
     method: 'POST',

@@ -4,8 +4,7 @@ import { readFile } from 'node:fs'
 async function imageService(req, res) {
   if (!req.body.imageName) {
     res.sendStatus(400)
-    log(`Bad request: ${JSON.stringify(req.body)}`, './errors.txt')
-    return
+    return log(`Bad request: ${JSON.stringify(req.body)}`, './errors.txt')
   }
   readFile('./database/images.json', 'utf8', (err, data) => {
     if (err) log(err, './errors.txt')
