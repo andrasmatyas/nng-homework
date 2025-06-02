@@ -1,7 +1,7 @@
 import multiplyMatrices from '../math/multiplyMatrices.js'
 import log from '../logger.js'
 
-function multiplyMatricesService(req, res) {
+async function multiplyMatricesService(req, res) {
   if (
     !req.body.matrix1 ||
     !req.body.matrix2 ||
@@ -33,7 +33,7 @@ function multiplyMatricesService(req, res) {
     res.json({ error: message })
     return log(message, './errors.txt')
   }
-  const resultMatrix = multiplyMatrices(
+  const resultMatrix = await multiplyMatrices(
     matrix1,
     row1,
     column1,
